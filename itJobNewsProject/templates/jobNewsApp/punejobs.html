@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{%static "css/demo.css" %}">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 align="center">Pune Jobs Information</h1>
+    <div align="center">
+        <img src="{%static "images/chatrapati.jpg" %}">
+        <img src="{%static "images/Shivaji_Maharaj.jpg" %}">
+        <img src="{%static "images/warrior.jpg" %}">
+    </div>
+    <hr>
+    {%if puneJobs_list%}
+    <table>
+        <thead>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Eligibility</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+        {%for job in puneJobs_list%}
+        <tr>
+            <td>{{job.date}}</td>
+            <td>{{job.company}}</td>
+            <td>{{job.title}}</td>
+            <td>{{job.eligibility}}</td>
+            <td>{{job.address}}</td>
+            <td>{{job.email}}</td>
+            <td>{{job.phonenumber}}</td>
+        </tr>
+
+        {%endfor%}
+    </table>
+    {%else%}
+    <p>Empty Pune Jobs List</p>
+    {%endif%}
+</body>
+
+</html>

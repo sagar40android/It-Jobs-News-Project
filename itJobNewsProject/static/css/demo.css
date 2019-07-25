@@ -1,0 +1,44 @@
+.container .jumbotron{
+    margin-top: 200px;
+    background: red;
+    color: white;
+}
+
+body{
+    background: url(https://images.unsplash.com/photo-1531497151418-0519708d443e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size:cover;
+    background-repeat:no-repeat;  
+}
+
+table{
+    margin: auto;
+    background: white;
+    border: 2px solid red ;
+}
+
+td{
+    color: yellow;
+    border: 2px solid red ;
+    background: red;
+    padding: 5px;
+}
+
+th{
+    color: white;
+    background: blue;
+    height: 50px;
+}
+
+h1{
+    background: red;
+    color: white;
+}
+
+img{
+    background-repeat:no-repeat;
+    background-size: cover; 
+    width: 300px;
+    height: 200px;
+    margin:30px; 
+    border: 2px solid red;
+}
